@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Ordinary Test</title>
+</head>
+<body>
+<div class="container-fluid">
+    <table>
+        <tr>
+            <td> <h1>Write your twitter post</h1></td>
+        </tr>
+        <tr>
+            <td> <textarea id="messageArea" cols="80" rows="15" value=""></textarea></td>
+        </tr> 
+    </table>
+    <h3 id="messgShow"></h3>
+</div>
+
+
+    <script>
+document.getElementById("messageArea").addEventListener("input", function(e){
+      var messgString= e.target.value;
+      var messgLength=messgString.length;
+      e.target.value=messgString.substr(0,179)
+
+      document.getElementById("messgShow").innerText="You have written " + messgLength + " Words. " + " You have remain "+(180-messgLength)+"  words." ;
+
+      if(messgLength==""){
+        document.getElementById("messgShow").innerText="";
+
+      }
+
+})
+
+
+
+//    var a = new Array();
+//    for(var g=0;g<3; g++){
+//        a[g]=prompt('Enter the value : ');
+//    }
+//    document.write('<ul>')
+//    for(i=0;i<=5;i++){
+       
+//        document.write( '<li>' + a[i]  + '</li>')
+     
+//    }
+//    document.write('</ul>')
+   
+    </script>
+</body>
+</html>
