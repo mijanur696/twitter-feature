@@ -5,8 +5,10 @@
     }
     h1{
         font-size: 22px;
+        color: aqua;
     }
     h3{
         font-size: 18px;
+        color: red;
     }
 }
