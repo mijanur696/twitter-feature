@@ -1,6 +1,12 @@
 @media (max-width:768px){
     textarea{
-        width: 150px;
-        height: 100px;
+        width: 250px;
+        height: 150px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 22px;
     }
 }
